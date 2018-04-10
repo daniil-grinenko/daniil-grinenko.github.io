@@ -8,13 +8,13 @@ img{
 	max-width: 100%
 }
 header {
- padding-top: 59px;
+ padding-top: 40px;
  background-color: #3a7dfd;
  color: #ffffff;
  padding-bottom: 22px;
 }
 .header-pretitle{
-	margin-top: 102px;
+	margin-top: 90px;
 }
 .header-title{
 	font-size: 48px;
@@ -102,11 +102,16 @@ header small{
  font-weight: 400;
 }
 .portfolio-block a{
-	/* Style for "Смотреть р" */
- color: #072b6f;
+	/* Удалить комментарий после появления ссылки */
+ /* color: #072b6f; */
  font-size: 14px;
  font-weight: 400;
  text-decoration: underline;
+}
+.disabled {
+ pointer-events: none;
+ cursor: default;
+ color: #999;
 }
 
 /* Оформление подвала*/
@@ -152,10 +157,13 @@ footer{
 	-o-transition: 0.2s;
 	transition: 0.2s;
 }
- .footer-button:hover{
+.dispnone {
+ display: none;
+}
+.footer-button:hover{
  	background-color: #fff;
  	color: #3a7dfd;
- }
+}
 @media(max-width: 1200px){
  .header-pretitle{
 	margin-top: 50px;
