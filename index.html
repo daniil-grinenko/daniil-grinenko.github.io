@@ -32,7 +32,9 @@
 				 	<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Даниил Гриненко</h1>
 					 <p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Студент<br/>Группы ПР-17-2</p>
       				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
-      					<a href="#portfolio-title" class="header-button">Перейти к работам</a>
+      				<p class="goToWork">Перейти к работам:</p>
+      					<a href="#CorelDRAW" class="header-button aCorel">CorelDRAW</a>
+      					<a href="#PhotoShop" class="header-button aPhoto">PhotoShop</a>
       				<small class="dispnone">*Это бесплатно</small>
      				 </div><!-- /.header-button-block -->
 			 	</div><!-- /.col-5 -->
@@ -43,8 +45,8 @@
  	<section class="portfolio">
 	 	<div class="container">
 		 	<div class="portfolio-block wow fadeIn">
-			  <h2 id="portfolio-title" class="portfolio-title">Выполненые работы</h2>
-		 	 <p class="portfolio-subtitle">CorelDRAW</p>
+			  <h2 class="portfolio-title">Выполненые работы</h2>
+		 	 <p id="CorelDRAW" class="portfolio-subtitle">CorelDRAW</p>
 		   <div class="row">
 		    <div class="col-md-6">
 		    	<div class="portfolio-col-1">
@@ -52,6 +54,14 @@
 			  	 		<h3>Весенние цветы</h3>
 			   			<div class="post-img">
 			   				<img class="img-1" src="img/flowers.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+			   		<div class="post">
+			  	 		<h3>Бабочка</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/butterfly.jpg">
 			   			</div>
 		    			<p class="portfolio-text dispnone"></p>
 	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
@@ -69,6 +79,30 @@
 		    <div class="col-md-6">
 		    	<div class="portfolio-col-2">
 			   		<div class="post">
+			  	 		<h3>Плеер</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/imitation-3D.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+		    		<div class="post">
+			  	 		<h3>Металическая банка</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/metal-can.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+		    	</div><!-- /.portfolio-col-1 -->
+		  	</div><!-- /.col-6 -->
+    	</div><!-- /.row -->
+     	<h2 id="portfolio-title" class="portfolio-title">Выполненые работы</h2>
+		<p id="PhotoShop" class="portfolio-subtitle">PhotoShop</p>
+		  <div class="row">
+		    <div class="col-md-6">
+		    	<div class="portfolio-col-1">
+					<div class="post">
 			  	 		<h3>Весенние цветы</h3>
 			   			<div class="post-img">
 			   				<img class="img-1" src="img/flowers.jpg">
@@ -77,9 +111,37 @@
 	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    		</div><!-- /.post -->
 			   		<div class="post">
+			  	 		<h3>Весенние цветы</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/butterfly.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+			   		<div class="post">
 			  	 		<h3>Вишенка</h3>
 			   			<div class="post-img">
 			   				<img class="img-1" src="img/cherry.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+		    	</div><!-- /.portfolio-col-1 -->
+		  	 </div><!-- /.col-6 -->
+		    <div class="col-md-6">
+		    	<div class="portfolio-col-2">
+			   		<div class="post">
+			  	 		<h3>Вишенка</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/imitation-3D.jpg">
+			   			</div>
+		    			<p class="portfolio-text dispnone"></p>
+	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
+		    		</div><!-- /.post -->
+		    		<div class="post">
+			  	 		<h3>Вишенка</h3>
+			   			<div class="post-img">
+			   				<img class="img-1" src="img/metal-can.jpg">
 			   			</div>
 		    			<p class="portfolio-text dispnone"></p>
 	     				<a class="disabled dispnone" href="#">Смотреть работу</a>
@@ -117,8 +179,29 @@
 		 </div><!-- /.container -->
   </footer>
   <script src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script>
   	new WOW().init();
+  	$(document).ready(function() {
+  $("a.aPhoto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+  	$(document).ready(function() {
+  $("a.aCorel").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
   </script>
  </body>
 </html>
