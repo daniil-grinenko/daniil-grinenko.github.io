@@ -12,6 +12,7 @@ header {
  background-color: #3a7dfd;
  color: #ffffff;
  padding-bottom: 22px;
+ height: 100vh;
 }
 .header-pretitle{
 	margin-top: 90px;
@@ -62,16 +63,36 @@ header small{
 .header-button-block{
 	/*max-width: 210px;*/
 }
+.monic {
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 10px;
+  height: 100%;
+  background: url("../img/main-img.png") no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  background-origin: content-box;
+}
+
+
+
+
+
 /* Секция портфолио*/
 .portfolio{
 	background-color: #dddddd;
-	padding-top: 44px;
+	padding-top: 10px;
 	padding-bottom: 71px;
 }
 .portfolio-block{
 	background-color: #fff;
 	padding-top: 29px;
 	padding-bottom: 44px;
+	background: url("../img/vect.jpg") repeat; 
+}
+.typeGrafic{
+	padding: 0px 40px;
+	text-align: center;
 }
 .portfolio-title{
 	text-transform: uppercase;
@@ -100,6 +121,7 @@ header small{
  font-size: 18px;
  font-weight: 700;
  text-transform: uppercase;
+ padding-left: 20px;
 }
 
 .post{
@@ -118,7 +140,7 @@ header small{
 .portfolio-col-1 img{
 	max-height: 400px;
 }
-.portfolio-col-1 img{
+.portfolio-col-2 img{
 	max-height: 625px;
 }
 .portfolio-text{
