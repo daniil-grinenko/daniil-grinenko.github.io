@@ -15,12 +15,13 @@ header {
 }
 .header-pretitle{
 	margin-top: 90px;
+	font-size: 20px;
 }
 .header-title{
 	font-size: 48px;
 	font-weight: 700; 
  line-height: 46.81px;
- margin-top: 21px;
+ margin-top: 0px;
 }
 .header-subtite{
 	font-weight: 400;
@@ -43,6 +44,7 @@ header {
  -webkit-transition: 0.2s;
  -o-transition: 0.2s;
  transition: 0.2s;
+ text-align: center;
 }
 .header-button:hover{
 	box-shadow: none;
@@ -54,7 +56,7 @@ header small{
 	margin-top: 9px;
 }
 .header-button-block{
-	max-width: 210px
+	max-width: 210px;
 }
 /* Секция портфолио*/
 .portfolio{
@@ -94,6 +96,21 @@ header small{
  font-size: 18px;
  font-weight: 700;
  text-transform: uppercase;
+}
+
+.post{
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+}
+.post-img{
+	display: inline-block;
+	width: 90%;
+	min-height: 100px;
+	text-align: center;
+}
+
+.img-1{
+	max-height: 200px;
 }
 .portfolio-text{
 	/* Style for "У «Газпром" */
