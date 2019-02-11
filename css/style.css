@@ -68,7 +68,7 @@ header small{
   box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
-  height: 470px;
+  height: 480px;
   background: url("../img/main-img2.png") no-repeat;
   background-size: 100% 100%;
   background-clip: padding-box;
@@ -154,7 +154,10 @@ header small{
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
+.img-1{
+	border-radius: 15px;
+	border: 4px solid black;
+}
 .portfolio-col-1 img{
 	max-height: 400px;
 }
