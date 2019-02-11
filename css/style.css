@@ -64,16 +64,28 @@ header small{
 	/*max-width: 210px;*/
 }
 .monic {
+	position: relative;
   box-sizing: border-box;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 10px;
-  height: 100%;
-  background: url("../img/main-img.png") no-repeat;
+  height: 470px;
+  background: url("../img/main-img2.png") no-repeat;
   background-size: 100% 100%;
   background-clip: padding-box;
   background-origin: content-box;
 }
-
+.inmon{
+	color: black;
+	position: absolute;
+	padding-right: 15%;
+	top: 20%;
+}
+.mid{
+	margin: 7% 0;
+}
+.top{
+	margin-top: -25px;
+}
 
 
 
@@ -82,13 +94,19 @@ header small{
 .portfolio{
 	background-color: #dddddd;
 	padding-top: 10px;
-	padding-bottom: 71px;
+	padding-bottom: 30px;
 }
 .portfolio-block{
+	position: relative;
 	background-color: #fff;
 	padding-top: 29px;
 	padding-bottom: 44px;
-	background: url("../img/vect.jpg") repeat; 
+	background: url("../img/vect.png") repeat; 
+}
+.back{
+	position: absolute;
+	right: 10px;
+	box-shadow: 5px 8px 34px 3px rgba(18, 61, 145, 0.83);
 }
 .typeGrafic{
 	padding: 0px 40px;
@@ -104,7 +122,7 @@ header small{
 	margin-top: 10px;
 	font-size: 14px;
 	color: #7bb9ff;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 .portfolio-title, .portfolio-subtitle{
 	text-align: center;
@@ -121,7 +139,7 @@ header small{
  font-size: 18px;
  font-weight: 700;
  text-transform: uppercase;
- padding-left: 20px;
+ padding-left: 50px;
 }
 
 .post{
@@ -149,18 +167,7 @@ header small{
  font-size: 14px;
  font-weight: 400;
 }
-.portfolio-block a{
-	/* Удалить комментарий после появления ссылки */
- /* color: #072b6f; */
- font-size: 14px;
- font-weight: 400;
- text-decoration: underline;
-}
-.disabled {
- pointer-events: none;
- cursor: default;
- color: #999;
-}
+
 
 /* Оформление подвала*/
 
@@ -212,15 +219,20 @@ footer{
  	background-color: #fff;
  	color: #3a7dfd;
 }
+#topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
 @media(max-width: 1200px){
  .header-pretitle{
 	margin-top: 50px;
  }
+ .monic{
+ 	height: 400px;
+ }
 }
 @media(max-width: 992px){
- .header-img {
- 	display: none;
- }
  .header-pretitle{
  	margin-top: 10px;
  }
@@ -240,6 +252,9 @@ footer{
  .footer-button{
  	font-size: 14px;
  	padding: 8px 35px;
+ }
+ .monic{
+ 	display: none;
  }
 }
 @media(max-width: 786px){

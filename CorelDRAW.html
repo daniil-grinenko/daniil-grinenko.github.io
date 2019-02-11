@@ -18,13 +18,39 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
+		 <!-- Библиотека jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+<script src="js/script.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script>
+  new WOW().init();
+ </script>
+   <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  $(document).ready ( function(){
+  $('#topNubex').fadeOut();
+  });
+  </script>
 	</head>
  <body>
  	<section class="portfolio">
 	 	<div class="container">
 		 	<div class="portfolio-block wow fadeIn">
-		 	<h1 class="typeGrafic">Векторная графика</h1>
-					<p class="typeGrafic">Векторная графика — способ представления объектов и изображений в компьютерной графике, основанный на математическом описании элементарных геометрических объектов, обычно называемых примитивами, таких как: точки, линии, сплайны, кривые Безье, круги и окружности, многоугольники.</p>
+		 		<a href="title.html" class="header-button back">Назад</a>
+		 		<h1 class="typeGrafic">Векторная графика</h1>
+				<p class="typeGrafic">Векторная графика — способ представления объектов и изображений в компьютерной графике, основанный на математическом описании элементарных геометрических объектов, обычно называемых примитивами, таких как: точки, линии, сплайны, кривые Безье, круги и окружности, многоугольники.</p>
 			  <h2 class="portfolio-title">Выполненые работы</h2>
 		 	 <p class="portfolio-subtitle">CorelDRAW</p>
 		   <div class="row">
@@ -80,13 +106,6 @@
    	</div><!-- /.porfolio-block -->
   	</div><!-- /.container -->
 		</section>
- <script src="js/wow.min.js"></script>
- <script>
-  new WOW().init();
- </script>
+<div id="topNubex"><img src="img/up-arrow.png" width="30px" height="30px" /></div>
 </body>
- <!-- Библиотека jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-<script src="js/script.js"></script>
 </html>

@@ -18,12 +18,38 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  $(document).ready ( function(){
+  $('#topNubex').fadeOut();
+  });
+  </script>
+    	<script src="js/wow.min.js"></script>
+  	<script>
+  		new WOW().init();
+  	</script>
 	</head>
 
 	<body>
  		<section class="portfolio">
 	 		<div class="container">
 		 		<div class="portfolio-block wow fadeIn">
+		 		<a href="title.html" class="header-button back">Назад</a>
+		 		<h1 class="typeGrafic">Растровая графика</h1>
+				<p class="typeGrafic">Растровая графика — это изображения, составленные из пикселов — маленьких цветных квадратиков, размещенных в прямоугольной сетке. Пиксел — это самая маленькая единица цифрового изображения.</p>
 					<h2 class="portfolio-title">Выполненые работы</h2>
 					<p class="portfolio-subtitle">PhotoShop</p>
 		  			<div class="row">
@@ -34,24 +60,18 @@
 			   						<div class="post-img">
 			   							<img class="img-1" src="img/PhotoShop/eyeColor.jpg">
 			   						</div>
-		    						<p class="portfolio-text dispnone"></p>
-	     							<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    					</div><!-- /.post -->
 			   					<div class="post">
 			  	 					<h3>Наложение фотографий</h3>
 			   						<div class="post-img">
 			   							<img class="img-1" src="img/PhotoShop/factory.jpg">
 			   						</div>
-		    						<p class="portfolio-text dispnone"></p>
-	     							<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    					</div><!-- /.post -->
 			   					<div class="post">
 			  	 					<h3>Надпись adobe</h3>
 			   						<div class="post-img">
 			   							<img class="img-1" src="img/PhotoShop/text-effects/adobe.jpg">
 			   						</div>
-		    						<p class="portfolio-text dispnone"></p>
-	     							<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    					</div><!-- /.post -->
 		    				</div><!-- /.portfolio-col-1 -->
 		  	 			</div><!-- /.col-6 -->
@@ -62,16 +82,12 @@
 			   						<div class="post-img">
 			   							<img class="img-1" src="img/PhotoShop/frames/pair.jpg">
 			   						</div>
-		    						<p class="portfolio-text dispnone"></p>
-	     							<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    					</div><!-- /.post -->
 		    					<div class="post">
 			  	 					<h3>Ночь</h3>
 			   						<div class="post-img">
 			   							<img class="img-1" src="img/PhotoShop/night.jpg">
 			   						</div>
-		    						<p class="portfolio-text dispnone"></p>
-	     							<a class="disabled dispnone" href="#">Смотреть работу</a>
 		    					</div><!-- /.post -->
 		    				</div><!-- /.portfolio-col-1 -->
 		  	 			</div><!-- /.col-6 -->
@@ -79,15 +95,11 @@
     			</div><!-- /.porfolio-block -->
    			</div><!-- /.container -->
 	 	</section>
-  	<script src="js/wow.min.js"></script>
-  	<script>
-  		new WOW().init();
-  	</script>
+
+     				<div id="topNubex"><img src="img/up-arrow.png" width="30px" height="30px" /></div>
  	</body>
  <!-- Библиотека jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-<script src="js/script.js">
-
-</script>
+<script src="js/script.js"></script>
 </html>
